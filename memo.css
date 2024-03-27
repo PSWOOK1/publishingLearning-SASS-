@@ -1,0 +1,17 @@
+/* css 기본 변수 문법
+var 넣어줘야함 */
+:root {
+  --main-color: red;
+}
+
+.test {
+  background-color: var(--main-color);
+}
+
+/* css 기본 사칙연산 문법 */
+.test {
+  background-color: var(--main-color);
+  font-size: calc(40px - 20px);
+  width: calc(40% - 20px);
+  /* 40% 에서 20px 빼주세요~ 가능 */
+}

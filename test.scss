@@ -9,19 +9,50 @@ $기본사이즈: 16px;
   font-size: $기본사이즈 - 2px;
 }
 
-//  css 기본 변수 문법
-//  var 넣어줘야함
-//  :root {
-//   --main-color: red;
-// }
+// nesting 문법
+.main-bg h4 {
+  font-size: 16px;
+}
+.main-bg button {
+  color: red;
+}
 
-// .test {
-//   background-color: var(--main-color);
-// }
+.main-bg {
+  width: 100px;
+  h4 {
+    font-size: 16px;
 
-// css 기본 사칙연산 문법
-// .test {
-//     background-color: var(--main-color);
-//     font-size: calc(40px - 20px);
-//     width: calc(40% - 20px); // 40% 에서 20px 빼주세요~ 가능
-//   }
+    // nesting 문법 중첩은 가능하나 2개 이상 안하길 권장
+    span {
+      height: 50px;
+    }
+  }
+  button {
+    color: red;
+  }
+}
+
+// @extend 문법 (class 전체를 복사해주는 문법)
+// %임시클래스 특징 : 단독으로 컴파일 되지 않음.
+%btn {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.btn-green {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  color: green;
+}
+
+.btn-green {
+  @extend %btn;
+  color: green;
+}
+
+.btn-red {
+  @extend %btn;
+  color: red;
+}

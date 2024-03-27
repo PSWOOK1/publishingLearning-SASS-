@@ -1,4 +1,46 @@
 .backgorund {
   background-color: #2a4cb2;
   font-size: 14px;
+}
+
+.main-bg h4 {
+  font-size: 16px;
+}
+
+.main-bg button {
+  color: red;
+}
+
+.main-bg {
+  width: 100px;
+}
+.main-bg h4 {
+  font-size: 16px;
+}
+.main-bg h4 span {
+  height: 50px;
+}
+.main-bg button {
+  color: red;
+}
+
+.btn-red, .btn-green {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.btn-green {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  color: green;
+}
+
+.btn-green {
+  color: green;
+}
+
+.btn-red {
+  color: red;
 }/*# sourceMappingURL=test.css.map */
