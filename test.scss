@@ -1,0 +1,27 @@
+$메인칼라: #2a4cb2;
+$서브칼라: red;
+$기본사이즈: 16px;
+
+// sass에서 사칙연산 가능
+// 단, 같은 단위끼리 할것 (% 끼리 등)
+.backgorund {
+  background-color: $메인칼라;
+  font-size: $기본사이즈 - 2px;
+}
+
+//  css 기본 변수 문법
+//  var 넣어줘야함
+//  :root {
+//   --main-color: red;
+// }
+
+// .test {
+//   background-color: var(--main-color);
+// }
+
+// css 기본 사칙연산 문법
+// .test {
+//     background-color: var(--main-color);
+//     font-size: calc(40px - 20px);
+//     width: calc(40% - 20px); // 40% 에서 20px 빼주세요~ 가능
+//   }
