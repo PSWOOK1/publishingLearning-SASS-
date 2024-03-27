@@ -1,0 +1,13 @@
+// 컴파일 하기 싫은것은 제목 앞에 _ 붙이기
+
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+$메인컬러: brown;
+
+// 다른 파일의 @mixin, $변수 이런것도 가져올 수 있음

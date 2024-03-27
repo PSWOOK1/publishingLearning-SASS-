@@ -56,3 +56,52 @@ $기본사이즈: 16px;
   @extend %btn;
   color: red;
 }
+
+// @mixin 문법 (긴 코드를 짧은 단어로 축약할 때 사용)
+// function 이랑 같은듯?
+@mixin 폰트스타일() {
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+// @mixin 문법의 $파라미터 (긴 코드를 가변적으로 만들 때 사용)
+@mixin 폰트스타일2($구멍, $구멍2) {
+  font-size: $구멍;
+  letter-spacing: $구멍2;
+}
+
+h1 {
+  @include 폰트스타일2(40px, 1px);
+}
+
+// 글자 중간 $변수나 $파라미터 넣을 땐 : #{$변수명}
+@mixin 폰트스타일2($구멍, $구멍2) {
+  font-size: $구멍;
+  #{$구멍2}: -1px;
+}
+
+h2 {
+  @include 폰트스타일2(40px, letter-spacing);
+}
+
+h3 {
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+h4 {
+  font-size: 10px;
+  letter-spacing: -1px;
+}
+
+// 다른 파일에 있는 내용 가져오고 싶을 때
+// @use '파일경로'
+@use "reset"; // reset.scss 안에 있는 파일들을 가져와주세요~
+// 다른 파일의 @mixin, $변수 이런것도 가져올 수 있음
+
+h5 {
+  @include 폰트스타일(40px);
+  color: reset.$메인컬러; // 다른 파일의 $변수를 쓰려면 : 파일명.$변수
+  background: reset.믹스인이름(
+
+  ); // 다른 파일의 @mixin 쓰려면 @include 파일명.mixin 이름
+}
