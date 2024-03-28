@@ -14,9 +14,40 @@
   </head>
   <body>
     <!-- <video src="/video/bridge.mp4" controls></video> -->
-    <video controls>
+    <!-- <video controls>
       <source src="/video/bridge.mp4" type="video/mp4" />
-    </video>
+      <source src="/video/bridge-m.webm" type="video/mp4" />
+    </video> -->
+
+    <!-- 크롬 정책상 muted 필수 -->
+    <!-- <video controls autoplay muted>
+      <source src="/video/bridge.mp4" type="video/mp4" />
+    </video> -->
+
+    <!-- preload="none" 미리다운X, auto 미리다운O, metadata 미리다운 적당히 -->
+    <!-- <video controls preload="metadata">
+      <source src="/video/bridge.mp4" type="video/mp4" />
+    </video> -->
+
+    <!-- poster="경로" 비디오 재생 전 썸네일 이미지 -->
+    <!-- <video controls poster="...">
+      <source src="/video/bridge.mp4" type="video/mp4" />
+    </video> -->
+
+    <!-- loop 무한재생 -->
+    <!-- <video controls loop>
+      <source src="/video/bridge.mp4" type="video/mp4" />
+    </video> -->
+
+    <audio src="/video/bass.mp3" controls></audio>
+    <!-- 최초에 음소거 상태 (사용자가 직접 해제 가능) -->
+    <audio src="/video/bass.mp3" controls muted></audio>
+
+    <audio src="/video/bass.mp3" controls preload="..."></audio>
+
+    <audio controls>
+      <source src="/video//bass.mp3" />
+    </audio>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
