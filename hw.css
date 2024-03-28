@@ -1,0 +1,50 @@
+.sh-list li {
+  list-style: none;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+.sh-list li:hover {
+  background-color: blue;
+  color: white;
+}
+
+.alert-green {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solide #eee;
+  color: white;
+  background-color: green;
+}
+
+.alert-yellow {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solide #eee;
+  color: white;
+  background-color: yellow;
+}
+
+.alert-blue {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solide #eee;
+  color: white;
+  background-color: blue;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.row .col-6 {
+  float: left;
+  padding: 15px;
+  border: 1px solid black;
+  width: 50%;
+}
+.row .col-4 {
+  float: left;
+  padding: 15px;
+  border: 1px solid black;
+  width: 33.3333333333%;
+}/*# sourceMappingURL=hw.css.map */

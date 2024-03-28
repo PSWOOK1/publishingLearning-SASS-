@@ -1,0 +1,79 @@
+.sh-list {
+  li {
+    list-style: none;
+    padding: 15px;
+    border: 1px solid #eee;
+  }
+
+  //   .active:hover {
+  //     background-color: blue;
+  //     color: white;
+  //   }
+
+  li:hover {
+    background-color: blue;
+    color: white;
+  }
+}
+
+// 숙제2 (extend 사용)
+// %alertbox {
+//   padding: 10px;
+//   border-radius: 5px;
+//   border: 1px solide #eee;
+//   color: white;
+// }
+
+// .alert-green {
+//   @extend %alertbox;
+//   background-color: green;
+// }
+
+// .alert-yellow {
+//   @extend %alertbox;
+//   background-color: yellow;
+// }
+// .alert-blue {
+//   @extend %alertbox;
+//   background-color: blue;
+// }
+
+// 숙제2 (mixin, include 사용)
+@mixin alertBox($backColor) {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solide #eee;
+  color: white;
+  background-color: $backColor;
+}
+
+.alert-green {
+  @include alertBox(green);
+}
+
+.alert-yellow {
+  @include alertBox(yellow);
+}
+.alert-blue {
+  @include alertBox(blue);
+}
+
+div {
+  box-sizing: border-box;
+}
+
+@mixin colBox($widthSize) {
+  float: left;
+  padding: 15px;
+  border: 1px solid black;
+  width: $widthSize;
+}
+
+.row {
+  .col-6 {
+    @include colBox(50%);
+  }
+  .col-4 {
+    @include colBox(100% / 3);
+  }
+}
