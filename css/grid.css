@@ -20,14 +20,20 @@
 
 .grid-container2 {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   height: auto;
+  grid-template-areas: "사진1 사진1 ." "사진1 사진1 ." ". . .";
+}
+
+.img1 {
+  grid-area: 사진1;
 }
 
 .grid-container2 img {
   grid-area: iam사진;
   width: 100%;
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
@@ -39,6 +45,6 @@
   .grid-container2 {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "iam사진" "iam사진" "iam사진" "iam사진" "iam사진" "iam사진";
+    grid-template-areas: "사진1" "iam사진" "iam사진" "iam사진" "iam사진" "iam사진";
   }
 }/*# sourceMappingURL=grid.css.map */
