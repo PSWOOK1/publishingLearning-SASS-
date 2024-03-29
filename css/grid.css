@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-areas: " 자식이름 자식이름 자식이름 자식이름 " " 자식이름2 . . . " " 자식이름2 . . .";
+}
+
+.grid-container div {
+  border: 1px solid black;
+}
+
+.grid-nav {
+  grid-area: 자식이름;
+}
+
+.grid-sidebar {
+  grid-area: 자식이름2;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: auto;
+}
+
+.grid-container2 img {
+  grid-area: iam사진;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "자식이름" "자식이름2" "." "." "." "." "." ".";
+  }
+  .grid-container2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "iam사진" "iam사진" "iam사진" "iam사진" "iam사진" "iam사진";
+  }
+}/*# sourceMappingURL=grid.css.map */
