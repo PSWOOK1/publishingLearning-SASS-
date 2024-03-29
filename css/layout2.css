@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.ani-text {
+  text-align: center;
+}
+
+.ani-text:hover {
+  animation-name: 와리가리;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-iteration-count: 3;
+}
+
+@keyframes 와리가리 {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}/*# sourceMappingURL=layout2.css.map */

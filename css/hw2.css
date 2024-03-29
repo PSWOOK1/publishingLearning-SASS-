@@ -1,0 +1,108 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.button {
+  color: white;
+  width: 120px;
+  height: 50px;
+  margin: 100px 100px;
+}
+
+.button:hover {
+  color: white;
+  animation-name: 흔들흔들;
+  animation-duration: 0.3s;
+}
+
+@keyframes 흔들흔들 {
+  0% {
+    transform: rotate(0deg);
+  }
+  17% {
+    transform: rotate(-10deg);
+  }
+  33% {
+    transform: rotate(0deg);
+  }
+  49% {
+    transform: rotate(10deg);
+  }
+  66% {
+    transform: rotate(0deg);
+  }
+  82% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.plus {
+  width: auto;
+  font-size: 70px;
+  text-align: center;
+  margin: 150px auto;
+  cursor: pointer;
+}
+
+.plus:hover {
+  animation-name: 쁠러스;
+  animation-duration: 1s;
+}
+
+@keyframes 쁠러스 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-35deg);
+  }
+  100% {
+    transform: rotate(45deg) scale(1.5);
+  }
+}
+.ani-navbar {
+  width: 200px;
+  background: black;
+  color: white;
+  height: 100%;
+  padding: 25px;
+  position: fixed;
+  z-index: 5;
+  text-align: right;
+  transform: translateX(-100px);
+  transition: all 1s;
+}
+
+.ani-navbar p {
+  text-align: left;
+}
+
+.ani-navbar:hover {
+  transform: translateX(0px);
+  text-align: center;
+}
+
+.ani-navbar:hover p {
+  text-align: center;
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-250px);
+  }
+  50% {
+    transform: translateX(-20px) skewX(-30deg);
+  }
+  100% {
+    transform: translateX(0px) skewX(-10deg);
+  }
+}/*# sourceMappingURL=hw2.css.map */

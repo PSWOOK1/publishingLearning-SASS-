@@ -1,0 +1,42 @@
+// 회전하고 싶을 때
+//   transform: rotate(180deg);
+//   좌표이동 (margin 도 가능하지만, 더 부드러운 효과)
+//   transform: translateX(100px);
+//   크기 변화 scale(배수)
+//   transform: scale(2);
+
+.ani-text {
+  text-align: center;
+}
+
+.ani-text:hover {
+  animation-name: 와리가리;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-iteration-count: 3;
+  //   animation-timing-function: ;
+}
+
+//   복잡한 애니메이션 정의 / transition 은 단조로움
+// @keyframes 넣고 싶으면 animation-name, animation-duration
+@keyframes 와리가리 {
+  0% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(-100px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  75% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
