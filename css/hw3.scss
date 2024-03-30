@@ -66,6 +66,38 @@ $borderColor: 1px solid rgba(128, 128, 128, 0.47);
   padding: 0.5%;
 }
 
+// focus 로 효과주기 시도중..
+// .main-content-header-left {
+//   display: grid;
+//   place-items: center;
+//   grid-template-columns: 8fr 2fr;
+//   width: 100%;
+//   height: 100%;
+//   margin-left: 5%;
+
+//   input {
+//     height: 100%;
+//     width: 100%;
+//     border-radius: 5px 0 0 5px;
+//     border: $borderColor;
+//   }
+
+//   input:focus {
+//     transition: all 1s;
+//     width: 100%;
+//   }
+
+//   button {
+//     height: 100%;
+//     width: 100%;
+//     border-radius: 0 5px 5px 0;
+//     border: $borderColor;
+//     background-color: rgb(97, 97, 97);
+//     color: white;
+//   }
+// }
+
+// hover로 효과주기
 .main-content-header-left {
   display: grid;
   place-items: center;
@@ -73,17 +105,13 @@ $borderColor: 1px solid rgba(128, 128, 128, 0.47);
   width: 100%;
   height: 100%;
   margin-left: 5%;
+  transition: all 1s;
 
   input {
     height: 100%;
-    width: 70%;
+    width: 100%;
     border-radius: 5px 0 0 5px;
     border: $borderColor;
-  }
-
-  input:focus {
-    transition: all 1s;
-    width: 100%;
   }
 
   button {
@@ -94,6 +122,10 @@ $borderColor: 1px solid rgba(128, 128, 128, 0.47);
     background-color: rgb(97, 97, 97);
     color: white;
   }
+}
+
+.main-content-header-left:hover {
+  width: 150%;
 }
 
 .main-content-header-rigth {
