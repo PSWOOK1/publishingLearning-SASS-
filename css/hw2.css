@@ -44,7 +44,8 @@ div {
   }
 }
 .plus {
-  width: auto;
+  width: 150px;
+  height: 120px;
   font-size: 70px;
   text-align: center;
   margin: 150px auto;
