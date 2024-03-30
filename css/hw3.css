@@ -12,7 +12,8 @@ body {
   display: grid;
   grid-template-columns: 5vw 95vw;
   grid-template-rows: 1fr;
-  height: 100vh;
+  height: auto;
+  width: auto;
   background: rgb(225, 225, 225);
 }
 
@@ -60,8 +61,35 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.main-content-dashBoard-item {
+.main-content-dashBoard-item:nth-child(1) {
   border-left: 2px solid yellow;
+  background: white;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 5%;
+}
+
+.main-content-dashBoard-item:nth-child(2) {
+  border-left: 2px solid green;
+  background: white;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 5%;
+}
+
+.main-content-dashBoard-item:nth-child(3) {
+  border-left: 2px solid purple;
+  background: white;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 5%;
+}
+
+.main-content-dashBoard-item:nth-child(4) {
+  border-left: 2px solid brown;
   background: white;
   border-radius: 5px;
   display: grid;
@@ -77,4 +105,65 @@ body {
   display: grid;
   place-items: center;
   font-size: 2vw;
+}
+
+.main-content-chart {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2.5%;
+}
+
+.main-content-chart-overview {
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 2%;
+  border: 1px solid rgba(128, 128, 128, 0.47);
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+}
+
+.main-content-chart-overview div {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.47);
+  background: rgb(212, 212, 212);
+  font-weight: 600;
+}
+
+.main-content-chart-overview p {
+  margin-left: 2%;
+}
+
+.main-content-chart-items {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background: white;
+  margin-right: 4%;
+  border-radius: 5px;
+  height: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.47);
+}
+
+.main-content-chart-item:nth-child(1) {
+  background: rgb(212, 212, 212);
+  font-weight: 600;
+}
+
+.main-content-chart-item {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  place-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.47);
+}
+
+.main-content-chart-item span:nth-child(1) {
+  margin: 0 auto 0 5%;
+}
+
+.main-content-chart-item span:nth-child(2) {
+  margin: 0 20% 0 auto;
+  background: rgb(22, 109, 231);
+  width: 25%;
+  height: 50%;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
 }/*# sourceMappingURL=hw3.css.map */
