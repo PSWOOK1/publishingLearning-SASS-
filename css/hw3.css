@@ -30,29 +30,26 @@ body {
   place-items: center;
   text-align: center;
   height: 100%;
+  transition: all 1s;
+  z-index: 5;
 }
-
 .main-sidebar span {
   opacity: 0;
   color: white;
   font-size: 0.1px;
+  transition: all 1s;
 }
 
 .main-sidebar:hover {
   width: 200%;
-  transition: all 1s;
   z-index: 5;
 }
-
 .main-sidebar:hover div {
-  transition: all 1s;
   padding-left: 7%;
   margin-right: auto;
 }
-
 .main-sidebar:hover span {
   opacity: 1;
-  transition: all 1s;
   font-size: 1.5vw;
 }
 
@@ -71,14 +68,18 @@ body {
   height: 100%;
   margin-left: 5%;
 }
-
 .main-content-header-left input {
   height: 100%;
   width: 100%;
   border-radius: 5px 0 0 5px;
   border: 1px solid rgba(128, 128, 128, 0.47);
 }
-
+.main-content-header-left input:focus {
+  margin-left: 5%;
+  transition: all 1s;
+  width: 450px;
+  transform-origin: left;
+}
 .main-content-header-left button {
   height: 100%;
   width: 150%;
@@ -86,13 +87,6 @@ body {
   border: 1px solid rgba(128, 128, 128, 0.47);
   background-color: rgb(97, 97, 97);
   color: white;
-}
-
-.main-content-header-left input:focus {
-  margin-left: 5%;
-  transition: all 1s;
-  width: 450px;
-  transform-origin: left;
 }
 
 .main-content-header-rigth {
@@ -172,13 +166,11 @@ body {
   display: grid;
   grid-template-rows: 1fr 9fr;
 }
-
 .main-content-chart-overview div {
   border-bottom: 1px solid rgba(128, 128, 128, 0.47);
   background: rgb(212, 212, 212);
   font-weight: 600;
 }
-
 .main-content-chart-overview p {
   margin-left: 2%;
 }
