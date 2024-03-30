@@ -26,7 +26,6 @@ body {
   width: 100%;
   color: white;
   font-size: 1.5vw;
-  display: grid;
   place-items: center;
   text-align: center;
   height: 100%;
@@ -145,7 +144,9 @@ body {
 .main-content-dashBoard-item p {
   margin-left: 10%;
 }
-
+.main-content-dashBoard-item p:nth-child(2) {
+  font-weight: 600;
+}
 .main-content-dashBoard-item i {
   display: grid;
   place-items: center;
@@ -209,4 +210,33 @@ body {
   border-radius: 10px;
   text-align: center;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .main-sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3% 3% 3% 3%;
+    padding-top: 15%;
+  }
+  .main-content-dashBoard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .main-content-dashBoard-item {
+    margin: 1% !important;
+  }
+  .main-content-dashBoard-item i {
+    font-size: 250%;
+  }
+  .main-content-chart {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .main-content-header {
+    display: grid;
+    grid-template-columns: 4fr 2fr 4fr;
+  }
 }/*# sourceMappingURL=hw3.css.map */
